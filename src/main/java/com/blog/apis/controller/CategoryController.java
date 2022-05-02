@@ -49,7 +49,7 @@ public class CategoryController {
 		}
 	
 
-		//getCategoryBy Id
+		//getCategoryById
 			@GetMapping("/{catId}")
 			public ResponseEntity<CategoryDto> getCategory(@PathVariable Integer catId){
 			CategoryDto categoryDto=this.categoryService.getCategory(catId);
@@ -57,7 +57,6 @@ public class CategoryController {
 			}
 
 			
-
 			//getAllCategories
 			@GetMapping("/")
 			public List<CategoryDto> getCategories(){
